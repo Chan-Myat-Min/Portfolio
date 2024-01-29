@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'kayan': '#704BEF',
+      'kayan': '#A020F0',
       'black': '#3A3845',
       'white':'#fff'
     },
