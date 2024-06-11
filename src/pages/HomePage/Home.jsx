@@ -1,6 +1,6 @@
 import React from "react";
 import home from "./home.css";
-import cvImg from "../../assets/cvphoto.png";
+import cvImg from "../../assets/cv.png";
 import { BsCodeSlash, BsVectorPen, BsAlarm } from "react-icons/bs";
 import { FaFacebook, FaTelegram, FaGithub, FaInstagram } from "react-icons/fa";
 import "animate.css";

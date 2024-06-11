@@ -111,12 +111,37 @@ const skillsData = [
   },
   {
     id: 8,
+    title: "Nodejs",
+    icon: <SiNextdotjs size={30} />,
+  },
+  {
+    id: 8,
+    title: "Docker",
+    icon: <SiNextdotjs size={30} />,
+  },
+  {
+    id: 8,
+    title: "Next Js",
+    icon: <SiNextdotjs size={30} />,
+  },
+  {
+    id: 8,
     title: "Next Js",
     icon: <SiNextdotjs size={30} />,
   },
   {
     id: 9,
     title: "Figma",
+    icon: <FaFigma size={30} />,
+  },
+  {
+    id: 9,
+    title: "Php",
+    icon: <FaFigma size={30} />,
+  },
+  {
+    id: 9,
+    title: "Laravel",
     icon: <FaFigma size={30} />,
   },
 ];

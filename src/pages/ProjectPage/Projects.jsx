@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import dashboardImg from "../../assets/imgs/student-dashboard.png";
+import MyanfobaseImg from "../../assets/imgs/Myanfobase.png";
 import fiberImg from "../../assets/imgs/fiber-starter.png";
 import deliveryImg from "../../assets/imgs/food-website.png";
 import shoppingImg from "../../assets/imgs/mms-mini-shopping.png";
@@ -26,6 +27,33 @@ const projectsData = [
     url: "https://swd-login-dashboard.netlify.app/",
     git: "https://github.com/MgHtetMyatAung/swd-dashboard-pj-with-login-page.git",
   },
+  {
+    id: 1,
+    title: "DNI E-Commerence",
+    image: (
+      <img
+        src={dashboardImg}
+        alt=""
+        className="w-100 shadow-lg h-auto rounded-[8px]"
+      />
+    ),
+    url: "https://dailyneeditems.com/",
+    git: "https://github.com/MgHtetMyatAung/swd-dashboard-pj-with-login-page.git",
+  },
+  {
+    id: 1,
+    title: "MyanFoBase",
+    image: (
+      <img
+        src={MyanfobaseImg}
+        alt=""
+        className="w-100 shadow-lg h-800px rounded-[8px]"
+      />
+    ),
+    url: "https://mminfobase.com/",
+    git: "https://github.com/MgHtetMyatAung/swd-dashboard-pj-with-login-page.git",
+  },
+
   {
     id: 2,
     title: "Fiber Starter Website",
