@@ -12,13 +12,13 @@ phases:
     commands:
       - echo Installing source YARN dependencies
       - yarn install
-      - python adf-build/generate_params.py
+      # - python adf-build/generate_params.py
 
   build:
     commands:
       - echo Build started on 'date'
-      # - yarn install
       - yarn run build
+      # - yarn install
       # - cdk synth > template.yml
 
 artifacts:
