@@ -6,12 +6,12 @@ phases:
       nodejs: 18
     commands:
       - echo "Installing dependencies using node 18"
-      - npm ci 
+      - yarn ci 
       - echo "Done installing dependencies ====>"
   build:
     commands:
       - echo "Building the React Project"
-      - npm run build
+      - yarn run build
       - echo "Done building the project ==> Exporting artifcats"
 
 artifacts:
