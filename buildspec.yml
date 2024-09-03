@@ -1,0 +1,28 @@
+# Copyright Amazon.com Inc. or its affiliates.
+# SPDX-License-Identifier: Apache-2.0
+
+version: 0.2
+phases:
+  install:
+    #if you use Ubuntu starndard image 2.0 or later, you must specify runtime_versions.
+    #if you specify runtime-versions and user an image other than Ubuntu standard image 2.0, the build fa.
+    runtime-versions:
+      nodejs: 16
+  pre_build:
+    commands:
+      - echo Installing source YARN dependencies
+      - yarn install
+      - python adf-build/generate_params.py
+
+  build:
+    commands:
+      - echo Build started on 'date'
+      # - yarn install
+      - yarn run build
+      # - cdk synth > template.yml
+
+artifacts:
+  files:
+    - "**/**"
+  discard:path: no
+  base-directory: build
