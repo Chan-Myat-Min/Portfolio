@@ -1,28 +1,21 @@
-# Copyright Amazon.com Inc. or its affiliates.
-# SPDX-License-Identifier: Apache-2.0
-
 version: 0.2
+
 phases:
   install:
-    #if you use Ubuntu starndard image 2.0 or later, you must specify runtime_versions.
-    #if you specify runtime-versions and user an image other than Ubuntu standard image 2.0, the build fa.
     runtime-versions:
-      nodejs: 16
-  pre_build:
+      nodejs: 18
     commands:
-      - echo Installing source YARN dependencies
-      - yarn install
-      # - python adf-build/generate_params.py
-
+      - echo "Installing dependencies using node 18"
+      - npm ci 
+      - echo "Done installing dependencies ====>"
   build:
     commands:
-      - echo Build started on 'date'
-      - yarn run build
-      # - yarn install
-      # - cdk synth > template.yml
+      - echo "Building the React Project"
+      - npm run build
+      - echo "Done building the project ==> Exporting artifcats"
 
 artifacts:
   files:
-    - "**/**"
-  discard:path: no
-  base-directory: build
+    - '**/*'
+  discard-paths: no
+  base-directory: dist
